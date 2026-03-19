@@ -1,0 +1,37 @@
+# GhostPass — Static props (applied at kernel stage)
+
+# Bootloader
+ro.boot.flash.locked=1
+ro.boot.verifiedbootstate=green
+ro.boot.vbmeta.device_state=locked
+ro.boot.veritymode=enforcing
+ro.boot.warranty_bit=0
+ro.warranty_bit=0
+ro.boot.selinux=enforcing
+
+# Build integrity
+ro.build.type=user
+ro.build.tags=release-keys
+ro.build.keys=release-keys
+ro.debuggable=0
+ro.secure=1
+ro.adb.secure=1
+ro.build.selinux=1
+
+# Security patch
+ro.build.version.security_patch=2025-12-05
+ro.vendor.build.security_patch=2025-12-05
+ro.product.build.security_patch=2025-12-05
+ro.system.build.security_patch=2025-12-05
+
+# Kernel
+ro.kernel.qemu=0
+ro.kernel.qemu.gles=0
+
+# ROM identity
+ro.build.fingerprint=google/walleye/walleye:9/PPR1.180905.001/4819092:user/release-keys
+ro.build.description=walleye-user 9 PPR1.180905.001 4819092 release-keys
+ro.build.display.id=PPR1.180905.001
+ro.build.id=PPR1.180905.001
+ro.build.user=android-build
+ro.build.host=wprd5.hot.corp.google.com

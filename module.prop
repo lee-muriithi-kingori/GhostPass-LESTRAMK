@@ -1,0 +1,8 @@
+id=ghostpass
+name=GhostPass — Integrity Fixer
+version=v1.0
+versionCode=1
+author=Lee Muriithi Kingori
+description=Fixes bootloader, kernel, mount, virtualization and ROM integrity signals. Targets root detection checkers.
+updateJson=
+support=https://t.me/hbstunnelytics

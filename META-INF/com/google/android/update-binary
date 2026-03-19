@@ -1,0 +1,15 @@
+#!/sbin/sh
+SKIPUNZIP=1
+
+unzip -o "$ZIPFILE" 'module.prop'       -d "$MODPATH" >&2
+unzip -o "$ZIPFILE" 'customize.sh'      -d "$MODPATH" >&2
+unzip -o "$ZIPFILE" 'service.sh'        -d "$MODPATH" >&2
+unzip -o "$ZIPFILE" 'post-fs-data.sh'   -d "$MODPATH" >&2
+unzip -o "$ZIPFILE" 'system.prop'       -d "$MODPATH" >&2
+
+set_perm_recursive "$MODPATH" root root 0755 0644
+chmod 0755 "$MODPATH/post-fs-data.sh"
+chmod 0755 "$MODPATH/service.sh"
+chmod 0755 "$MODPATH/customize.sh"
+
+. "$MODPATH/customize.sh"
